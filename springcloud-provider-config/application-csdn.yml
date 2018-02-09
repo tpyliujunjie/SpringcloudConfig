@@ -24,7 +24,7 @@ logging:
     org:
       springframework:
         web: debug
-	transaction: debug
+	transaction: true
       mybatis: debug
 server:
   port: 8100
