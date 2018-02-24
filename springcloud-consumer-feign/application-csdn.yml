@@ -1,5 +1,5 @@
 server:
-  port: 8202
+  port: 8201
 logging:
   level:
     com.yasaka.stock.feign.MFeignClient: debug
