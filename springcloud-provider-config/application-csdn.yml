@@ -28,4 +28,4 @@ logging:
         transaction: true
       mybatis: debug
 server:
-  port: 8100
+  port: 8101
