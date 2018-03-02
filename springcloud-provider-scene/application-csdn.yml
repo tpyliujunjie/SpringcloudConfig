@@ -1,15 +1,29 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.200.200:3306/test
+    url: jdbc:mysql://192.168.200.200:3306/bright_apollo
     username: admin
     password: im123456
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
   application:
-    name: springcloud-provider-config
+    name: springcloud-provider-scene
   profiles:
     active: test
 mybatis:
-  type-aliases-package: com.bright.apollo.domain.model
+  type-aliases-package: com.bright.apollo.common.entity
   mapper-locations: classpath*:/mybaits/*Mapper.xml
   configuration:
     cache-enabled: true
