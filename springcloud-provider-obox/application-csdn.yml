@@ -5,7 +5,7 @@ spring:
     password: im123456
     driver-class-name: com.mysql.jdbc.Driver
   application:
-    name: springcloud-provider-config
+    name: springcloud-provider-obox
   profiles:
     active: test
 mybatis:
