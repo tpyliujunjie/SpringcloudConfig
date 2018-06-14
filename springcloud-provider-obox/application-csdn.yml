@@ -9,7 +9,7 @@ spring:
   profiles:
     active: test
 mybatis:
-  type-aliases-package: com.bright.apollo.domain.model
+  type-aliases-package: com.bright.apollo.common.entity.*
   configuration:
     cache-enabled: true
 pagehelper:
