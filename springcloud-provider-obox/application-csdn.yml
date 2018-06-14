@@ -19,12 +19,10 @@ pagehelper:
   params: count=countSql
 logging:
   level:
-    com:
-      xiaolyuh: debug
-    org:
-      springframework:
-        web: debug
-        transaction: true
-      mybatis: debug
+    com.bright.apollo.dao : debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: /usr/local/onbrightLog/aliProject%d{yyyy-MM-dd  HH:mm:ss}.log
 server:
   port: 8200
