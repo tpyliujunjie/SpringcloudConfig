@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.200.200:3306/bright_apollo_user
-    username: admin
-    password: im123456
+    url: jdbc:mysql://rm-bp16t7i071284ljuo.mysql.rds.aliyuncs.com:3306/bright_apollo?useUnicode=true&amp;characterEncoding=utf8
+    username: root
+    password: Iltwao!1
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: springcloud-provider-obox
@@ -10,7 +10,6 @@ spring:
     active: test
 mybatis:
   type-aliases-package: com.bright.apollo.domain.model
-  mapper-locations: classpath*:/mybaits/*Mapper.xml
   configuration:
     cache-enabled: true
 pagehelper:
