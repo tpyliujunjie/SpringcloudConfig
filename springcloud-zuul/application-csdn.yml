@@ -11,6 +11,17 @@ zuul:
   routes:
     springcloud-consumer-feign: /consumer/**    
     springcloud-oauth2: /uaa/**
+security:
+  user:
+    password: password
+  oauth2:
+    client:
+      clientId: acme
+      clientSecret: acmesecret
+      accessTokenUri: http://localhost:8815/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8815/uaa/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8815/uaa/user
 # keycloak:
 #   realm : springcloud-zuul
 #   auth-server-url : http://127.0.0.1:8080/auth
